@@ -1,0 +1,164 @@
+body {
+    font-family: 'Pretendard-Regular';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    transition: all 0.4s ease;
+    overflow-x: hidden;
+}
+
+:root {
+    --bs-body-bg: white;
+    --bs-body-color: black;
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-bg: rgb(21, 23, 27);  
+    --bs-body-color: white; 
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('sahar/Pretendard-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container2 {
+    display: block;
+    visibility: visible;
+    filter: brightness(80%);
+    background-size: cover;
+    background-image: url(image/Foto_Sekolah.png);
+    height: 500px;
+    width: 100%;
+}
+
+/* untuk tombol */
+.dynamic-btn {
+    color: #212529;
+    border: 1px solid #212529;
+    background-color: transparent;
+    animation: 0.5s ease-in-out;
+}
+
+.dynamic-btn2 {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    animation: 0.5s ease-in-out;
+}
+
+.dynamic-btn:hover {
+    background-color: #212529;
+    border: 1px solid black;
+    animation: 0.5s ease-in-out;
+    color: #fff;
+}
+
+.dynamic-btn2:hover {
+    background-color: white;
+    animation: 0.5s ease-in-out;
+    color: black;
+}
+
+/* Mode gelap */
+[data-bs-theme="dark"] .dynamic-btn {
+    color: #c0c8ca;
+    border: 1px solid #c0c8ca;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+[data-bs-theme="dark"] .dynamic-btn:hover {
+    background-color: #c0c8ca;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+} 
+
+/* dropdown */
+
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: none !important;  
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar {
+    opacity: 0;
+    transform: translateY(-20px); /* sedikit turun biar kesan slide */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.navbar.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;   
+  gap: 10px;            
+}
+
+.navbar-brand img {
+  flex-shrink: 0;        
+}
+
+.navbar-brand .d-flex span,
+.navbar-brand .d-flex small {
+  line-height: 1.1;   /* makin kecil makin rapat */
+}
+
+.nav-link:after {
+    background-color: currentColor;
+}
+
+/* img */
+
+.card {
+    transition: transform 0.2s cubic-bezier(0.5, 0.1, 0.5, 1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* footer */
+
+footer {
+    background: #002b5c; /* warna biru tua */
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 20px;
+    padding-top: 15px;
+    text-align: center;
+}  

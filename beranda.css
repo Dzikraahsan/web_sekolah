@@ -1,0 +1,363 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Pretendard-Regular';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    transition: all 0.4s ease;
+    overflow-x: hidden;
+}
+
+:root {
+    --bs-body-bg: white;
+    --bs-body-color: black;
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-bg: rgb(21, 23, 27);  
+    --bs-body-color: white; 
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('sahar/Pretendard-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container2 {
+    visibility: visible;
+    filter: brightness(100%) saturate(80%);
+    background-size: cover;
+    background-image: url(https://res.cloudinary.com/da4fjxm1e/image/upload/v1757575899/foto_sekolah_1_gohqqi.png);
+    height: 512.5px;
+    width: 100%;
+}
+
+/* navbar */
+
+.navbar {
+    opacity: 0;
+    transform: translateY(-20px); 
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.navbar.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;   
+  gap: 10px;            
+}
+
+.navbar-brand img {
+  flex-shrink: 0;        
+}
+
+.navbar-brand .d-flex span,
+.navbar-brand .d-flex small {
+  line-height: 1.1;   /* makin kecil makin rapat */
+}
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 7.5px; 
+  width: 100%;
+  height: 2px; 
+  background-color: currentColor;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+}
+
+/* untuk tombol */
+.dynamic-btn {
+    color: #212529;
+    border: 1px solid #212529;
+    background-color: transparent;
+    animation: 0.5s ease-in-out;
+    width: fit-content;
+}
+
+.dynamic-btn2 {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    animation: 0.5s ease-in-out;
+}
+
+.dynamic-btn:hover {
+    background-color: #212529;
+    border: 1px solid black;
+    animation: 0.5s ease-in-out;
+    color: #fff;
+}
+
+.dynamic-btn2:hover {
+    background-color: white;
+    animation: 0.5s ease-in-out;
+    color: black;
+}
+
+/* Mode gelap */
+[data-bs-theme="dark"] .dynamic-btn {
+    color: #c0c8ca;
+    border: 1px solid #c0c8ca;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+[data-bs-theme="dark"] .dynamic-btn:hover {
+    background-color: #c0c8ca;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+} 
+
+
+/* dropdown */
+
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: none !important;  
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.img-fluid {
+    width: 300px;
+    transform: scale(1.02);
+}
+
+.img-fluid:hover {
+    transform: scale(1.05);
+}
+
+/* img */
+
+.card img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.img-k {
+    width: 80%;
+    height: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;   
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 3em; 
+}
+
+/* row */
+
+.card {
+    transition: transform 0.2s cubic-bezier(0.5, 0.1, 0.5, 1);
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.anm img {
+    transition: transform 0.2s cubic-bezier(0.5, 0.1, 0.5, 1);
+}
+
+.anm:hover img {
+    transform: scale(1.05);
+}
+
+.c-a {
+    transition: transform 0.2s cubic-bezier(0.5, 0.1, 0.5, 1);
+}
+
+.c-a:hover {
+    transform: scale(1.05);
+}
+
+.card1 {
+    background: rgb(43, 9, 234);
+    color: white;
+}
+
+.card1 img {
+    width: 88%;
+    height: 88%;
+    margin: 0 auto;
+    display: block;
+}
+
+.card2 {
+    background: #002b5c;
+    color: white;
+}
+
+.card2 img {
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.card3 {
+    background: #193329;
+    color: white;
+}
+
+.card3 img {
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.6rem;
+}
+
+.card4 {
+    background: #1eb383;
+    color: white;
+}
+
+.card4 img {
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+/* carousel */
+
+#galeri img {
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.carousel-inner {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-item {
+  transition: transform 1s ease-in-out, opacity 1s ease-in-out !important;
+}
+
+#carouselGaleri {
+  max-width: 700px;  
+  margin: 0 auto;     
+}
+
+
+#carouselGaleri .carousel-control-prev,
+#carouselGaleri .carousel-control-next {
+  width: 40px;   
+}
+
+#carouselGaleri .carousel-control-prev {
+  left: 5px;  
+}
+
+#carouselGaleri .carousel-control-next {
+  right: 5px;  
+}
+
+/* testimoni */
+
+.testimoni-box {
+    background-color: var(--bs-body-bg);
+    border-left: 4px solid #4b2ab6;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    position: relative;
+    font-size: 1.1rem;
+}
+
+.testimoni-box::before {
+    content: "❝";
+    font-size: 2rem;
+    color: #4b2ab6;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.alumni-photo img {
+    width: 240px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 0px 15px rgba(255, 255, 255, 0.7);
+    transition: transform 0.3s ease-in-out;
+}
+
+.alumni-photo:hover img {
+    transform: scale(1.03);
+}
+
+.test {
+    color: black;
+}
+
+[data-bs-theme="dark"] .test {
+    color: white;
+}
+
+/* footer */
+
+footer {
+    background: #002b5c; /* warna biru tua */
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 20px;
+    padding-top: 15px;
+    text-align: center;
+}    

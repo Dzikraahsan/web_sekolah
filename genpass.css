@@ -1,0 +1,31 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Sahar';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    transition: all 0.4s ease;
+}
+
+:root {
+    --bs-body-bg: white;
+    --bs-body-color: black;
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-bg: rgb(21, 23, 27);  
+    --bs-body-color: white; 
+}
+
+@font-face {
+    font-family: 'Sahar';
+    src: url('sahar/Sahar-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,394 @@
+body {
+    font-family: 'Pretendard-Regular';
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    background-color: var(--bs-body-bg);
+    color: var(--bs-body-color);
+    transition: all 0.4s ease;
+    overflow-x: hidden;
+}
+
+:root {
+    --bs-body-bg: white;
+    --bs-body-color: black;
+}
+
+[data-bs-theme="dark"] {
+    --bs-body-bg: rgb(21, 23, 27);  
+    --bs-body-color: white; 
+}
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('sahar/Pretendard-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container2 {
+    visibility: visible;
+    filter: brightness(80%);
+    background-size: cover;
+    background-image: url(https://res.cloudinary.com/da4fjxm1e/image/upload/v1756553743/foto_sekolah_epgg04.png);
+    height: 335px;
+    width: 100%;
+}
+
+/* untuk tombol */
+.dynamic-btn {
+    color: #212529;
+    border: 1px solid #212529;
+    background-color: transparent;
+    animation: 0.5s ease-in-out;
+}
+
+.dynamic-btn2 {
+    color: white;
+    border: 1px solid white;
+    background-color: transparent;
+    animation: 0.5s ease-in-out;
+}
+
+.dynamic-btn:hover {
+    background-color: #212529;
+    border: 1px solid black;
+    animation: 0.5s ease-in-out;
+    color: #fff;
+}
+
+.dynamic-btn2:hover {
+    background-color: white;
+    animation: 0.5s ease-in-out;
+    color: black;
+}
+
+/* Mode gelap */
+[data-bs-theme="dark"] .dynamic-btn {
+    color: #c0c8ca;
+    border: 1px solid #c0c8ca;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+[data-bs-theme="dark"] .dynamic-btn:hover {
+    background-color: #c0c8ca;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+} 
+
+/* dropdown */
+
+.dropdown-menu {
+    opacity: 0;
+    visibility: hidden;
+    transform: none !important;  
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+}
+
+.dropdown-menu.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.navbar {
+    opacity: 0;
+    transform: translateY(-20px); /* sedikit turun biar kesan slide */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.navbar.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;   
+  gap: 10px;            
+}
+
+.navbar-brand img {
+  flex-shrink: 0;        
+}
+
+.navbar-brand .d-flex span,
+.navbar-brand .d-flex small {
+  line-height: 1.1;   /* makin kecil makin rapat */
+}
+
+.nav-link:after {
+    background-color: currentColor;
+}
+
+/* profile */
+
+.row {
+    color: #002b5c; 
+}
+
+.row h1 span {
+    color: #6f42c1; 
+}
+
+.border {
+    width: 200px;
+    height: 1px;
+    color: black;
+    margin: 15px 0;
+    margin-left: -1rem;
+    margin-bottom: 1.5rem;
+}
+
+.dec {
+    color: #002b5c;
+    margin-left: -1.15rem;
+}
+
+[data-bs-theme="dark"] .dec {
+    color: white;
+}
+
+.btn1 {
+    margin-left: -1.25rem;
+}
+
+.school-profile p {
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* card */
+
+.c-a {
+    transition: transform 0.2s cubic-bezier(0.5, 0.1, 0.5, 1);
+}
+
+.c-a:hover {
+    transform: scale(1.05);
+}
+
+.card1 {
+    background: rgb(43, 9, 234);
+    color: white;
+}
+
+.card1 img {
+    width: 88%;
+    height: 88%;
+    margin: 0 auto;
+    display: block;
+}
+
+.card2 {
+    background: #002b5c;
+    color: white;
+}
+
+.card2 img {
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.card3 {
+    background: #193329;
+    color: white;
+}
+
+.card3 img {
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.6rem;
+}
+
+.card4 {
+    background: #1eb383;
+    color: white;
+}
+
+.card4 img {
+    width: 85%;
+    height: 85%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 0.5rem;
+}
+
+.card5 {
+    background: #c42690;
+    color: white;
+}
+
+.card5 img {
+    width: 98.5%;
+    height: 85%;
+    margin: 0 auto;
+    display: block;
+}
+
+.card6 {
+    background: #9c0303;
+    color: white;
+}
+
+.card6 img {
+    width: 98.5%;
+    height: 85%;
+    margin: 0 auto;
+    display: block;
+}
+
+.card7 {
+    background: #39cbef;
+    color: white;
+}
+
+.card7 img {
+    width: 98.5%;
+    height: 85%;
+    margin: 0 auto;
+    display: block;
+}
+
+.card8 {
+    background: #8569e1;
+    color: white;
+}
+
+.card8 img {
+    width: 98.5%;
+    height: 85%;
+    margin: 0 auto;
+    display: block;
+}
+
+.card-img-top {
+    transform: scale(1.02);
+}
+
+/* visi misi */
+
+.v-m {
+    color: var(--bs-body-color);
+}
+
+/* fasilitas */
+
+.fasilitas {
+  padding: 60px 20px;
+  background: var(--bs-body-bg);
+}
+
+.fasilitas .title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.fasilitas .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.fasilitas .card {
+  background: var(--bs-body-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.fasilitas .card:hover {
+  transform: scale(1.03);
+}
+
+.fasilitas .card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.fasilitas .card h3 {
+  margin: 15px 0 10px;
+  font-size: 1.2rem;
+}
+
+.fasilitas .card p {
+  padding: 0 15px 20px;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.fasilitas-card {
+    display: block;
+    margin: 0 auto;
+    width: 250px;           
+    aspect-ratio: 1 / 1;    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-radius: 12px;
+    background: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.fasilitas-card img {
+    max-width: 80%;
+    max-height: 60%;
+    object-fit: contain;   
+}
+
+.fasilitas-card:hover {
+    transform: scale(1.05); 
+}
+
+.fasilitas .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px; 
+    justify-content: center; 
+    max-width: 1100px; 
+    margin: 0 auto; 
+}
+
+/* footer */
+
+footer {
+    background: #002b5c; /* warna biru tua */
+    color: #fff;
+    padding: 40px 0;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    color: #fff;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255,255,255,0.2);
+    margin-top: 20px;
+    padding-top: 15px;
+    text-align: center;
+}   
