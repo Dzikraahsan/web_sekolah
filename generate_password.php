@@ -46,12 +46,15 @@ if($_SERVER['REQUEST_METHOD']==='POST') {
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
-<body>
-    <h2>Generate Password Hash</h2>
-        <form method="POST">
-            <label>Masukkan Password: </label><br>
-            <input type="text" name="password" required>
-            <button type="submit">Generate</button>
-        </form>
-</body>
+    <body>
+
+        <h2>Generate Password Hash</h2>
+        
+            <form method="POST">
+                <label>Masukkan Password: </label><br>
+                <input type="text" name="password" required>
+                <button type="submit">Generate</button>
+            </form>
+
+    </body>
 </html>

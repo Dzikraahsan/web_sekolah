@@ -1,4 +1,5 @@
 <?php
+
 require 'db.php';
 
 if ($_SERVER['REQUEST_METHOD']==='POST') {
@@ -12,8 +13,9 @@ if ($_SERVER['REQUEST_METHOD']==='POST') {
         exit;
     } else {
         echo "Gagal Menyimpan Saran: " . $conn->error;
-    } 
+    }
     }else {
         header("Location: kontak.php");
     }
+    
 ?>

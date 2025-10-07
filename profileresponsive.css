@@ -1,0 +1,390 @@
+/* ====== BASE RESPONSIVE ====== */
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 768px) {
+
+  html,
+  body {
+    overflow-x: clip !important;
+  }
+
+  .navbar {
+    position: sticky !important;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+  }
+}
+
+/* ===== SECTION: PROFIL SEKOLAH ===== */
+
+#profil .dec {
+  font-size: 2rem;
+}
+
+#profil .dec2 {
+  margin-left: -1.25rem;
+}
+
+#profil .dec3 {
+  margin-left: -1.25rem;
+}
+
+#profil .dec4 {
+  margin-left: -1.25rem;
+}
+
+@media (max-width: 768px) {
+  #profil .dec {
+    font-size: 1.3rem;
+    margin-left: 0.5rem;
+  }
+
+  #profil .border {
+    margin-left: 0.5rem;
+  }
+
+  #profil .border1 {
+    width: 10.90rem !important;
+  }
+
+  #profil .dec2 {
+    font-size: 0.85rem;
+    width: 250px;
+    margin-left: 0.5rem;
+    text-align: justify;
+    text-align-last: left;
+  }
+
+  #profil .btn1 {
+    margin-left: 0.5rem;
+  }
+
+  .text h5 {
+    font-size: 1rem;
+    margin-left: 2.25rem !important;
+    margin-top: -5.5rem !important;
+  }
+
+  .text p {
+    font-size: 0.7rem;
+    margin-left: 2.25rem !important;
+    margin-top: -0.525rem !important;
+  }
+
+  #profil .img-fluid {
+    margin-top: -25rem;
+    padding-left: 3.5rem !important;
+    width: 250px;
+  }
+
+}
+
+/* ====== SECTION: INFO SEKOLAH ====== */
+
+#info-sekolah .row {
+  align-items: center;
+}
+
+#info-sekolah img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  #profil-sekolah .col-md-6:first-child {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* ====== SECTION: SEJARAH ====== */
+
+#sejarah {
+  text-align: justify;
+  line-height: 1.7;
+}
+
+@media (max-width: 768px) {
+  #sejarah h2 {
+    font-size: 1.4rem;
+  }
+
+  #sejarah p {
+    font-size: 0.95rem;
+  }
+
+  #sejarah .border2 {
+    width: 15.85rem !important;
+  }
+
+}
+
+/* ====== SECTION: VISI-MISI ====== */
+@media (max-width: 768px) {
+  #visi-misi .border3 {
+    width: 9rem !important;
+  }
+
+}
+
+
+/* ====== SECTION: FASILITAS ====== */
+
+#fasilitas .card {
+  transition: transform 0.3s ease;
+}
+
+#fasilitas .card:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 768px) {
+  #fasilitas .col-md-4 {
+    margin-bottom: 1rem;
+  }
+}
+
+/* ====== SECTION: PRESTASI ====== */
+
+#prestasi .table {
+  font-size: 0.95rem;
+}
+
+@media (max-width: 576px) {
+  #prestasi table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* ====== SECTION: JURUSAN ====== */
+
+#jurusan .card {
+  height: 100%;
+}
+
+
+#jurusan .card img {
+  width: 280px;
+  height: auto;
+  padding: 1rem;
+  object-fit: cover;
+}
+
+#jurusan .card5 img {
+  width: 100%;
+  height: auto;
+  padding: 0rem;
+  object-fit: cover;
+}
+
+#jurusan .card6 img {
+  width: 100%;
+  height: auto;
+  padding: 0rem;
+  object-fit: cover;
+}
+
+#jurusan .card7 img {
+  width: 100%;
+  height: auto;
+  padding: 0rem;
+  object-fit: cover;
+}
+
+#jurusan .card8 img {
+  width: 100%;
+  height: auto;
+  padding: 0rem;
+  object-fit: cover;
+}
+
+#jurusan .c-1 {
+  width: 280px;
+  height: auto;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+  #jurusan .col-md-4 {
+    margin-bottom: 1rem;
+  }
+
+  #jurusan .row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    justify-items: center;
+  }
+
+  #jurusan .card {
+    width: 100%;
+    max-width: 180px;
+    text-align: center;
+    transition: none !important;
+    margin: 0 auto !important;
+  }
+
+  #jurusan .card {
+    transform: none !important;
+  }
+
+  #jurusan .card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+    padding: 0.5rem;
+    transition: none !important;
+  }
+
+  #jurusan .card img:hover {
+    transform: none !important;
+  }
+
+
+  #jurusan h5 {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+
+  #jurusan .card img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    display: block;
+  }
+
+}
+
+/* ====== SECTION: GALERI / CAROUSEL ====== */
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+/* ====== SECTION: INFO SEKOLAH ====== */
+
+#info-sekolah .card {
+  padding: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  #info-sekolah h2 {
+    font-size: 1.3rem;
+  }
+
+  #info-sekolah p {
+    font-size: 0.95rem;
+  }
+}
+
+/* ====== SECTION: KELAS INDUSTRI ====== */
+
+@media (max-width: 768px) {
+  #kelas-industri h5 {
+    font-size: 1rem;
+  }
+}
+
+/* ====== SECTION: JURUSAN ====== */
+
+#jurusan .card {
+  padding: 0.1rem;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+#jurusan .card img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Responsif  */
+
+@media (max-width: 768px) {
+  #jurusan .card img {
+    aspect-ratio: 1 / 1;
+  }
+}
+
+@media (max-width: 576px) {
+  #jurusan .card img {
+    aspect-ratio: 1 / 1;
+    width: 100%;
+  }
+}
+
+/* ====== FOOTER ====== */
+
+footer {
+  background: #0f2027;
+  color: white;
+  text-align: left;
+  padding: 2rem 0;
+}
+
+footer a {
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 576px) {
+  footer {
+    font-size: 0.9rem;
+    padding: 1.5rem 0;
+  }
+}
+
+/* ====== UTILITIES ====== */
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.mt-section {
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .mt-section {
+    margin-top: 2.5rem;
+  }
+}
+
+[data-aos] {
+  transition-duration: 0.7s !important;
+}

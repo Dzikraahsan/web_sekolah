@@ -15,13 +15,13 @@ body {
 }
 
 [data-bs-theme="dark"] {
-    --bs-body-bg: rgb(21, 23, 27);  
-    --bs-body-color: white; 
+    --bs-body-bg: rgb(21, 23, 27);
+    --bs-body-color: white;
 }
 
 @font-face {
     font-family: 'Pretendard-Regular';
-    src: url('sahar/Pretendard-Regular.woff2') format('woff2');
+    src: url('fonts/Pretendard-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -37,7 +37,8 @@ body {
     width: 100%;
 }
 
-/* untuk tombol */
+/* tombol */
+
 .dynamic-btn {
     color: #212529;
     border: 1px solid #212529;
@@ -65,7 +66,8 @@ body {
     color: black;
 }
 
-/* Mode gelap */
+/* Dark Mode */
+
 [data-bs-theme="dark"] .dynamic-btn {
     color: #c0c8ca;
     border: 1px solid #c0c8ca;
@@ -77,14 +79,14 @@ body {
     background-color: #c0c8ca;
     color: #000;
     transition: all 0.3s ease-in-out;
-} 
+}
 
 /* dropdown */
 
 .dropdown-menu {
     opacity: 0;
     visibility: hidden;
-    transform: none !important;  
+    transform: none !important;
     transition: opacity 0.25s ease, visibility 0.25s ease;
 }
 
@@ -93,6 +95,8 @@ body {
     visibility: visible;
 }
 
+/* navbar */
+
 .navbar {
     opacity: 0;
     transform: translateY(-20px); /* sedikit turun biar kesan slide */
@@ -100,23 +104,23 @@ body {
 }
 
 .navbar.show {
-  opacity: 1;
-  transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .navbar-brand {
-  display: flex;
-  align-items: center;   
-  gap: 10px;            
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .navbar-brand img {
-  flex-shrink: 0;        
+    flex-shrink: 0;
 }
 
 .navbar-brand .d-flex span,
 .navbar-brand .d-flex small {
-  line-height: 1.1;   /* makin kecil makin rapat */
+    line-height: 1.1;
 }
 
 .nav-link:after {
@@ -136,7 +140,7 @@ body {
 /* footer */
 
 footer {
-    background: #002b5c; /* warna biru tua */
+    background: #0f2027;
     color: #fff;
     padding: 40px 0;
 }
@@ -161,4 +165,98 @@ footer a:hover {
     margin-top: 20px;
     padding-top: 15px;
     text-align: center;
-}  
+}
+
+/* Navbar */
+
+.navbar-nav {
+  text-align: center;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
+/* responsive */
+
+@media (max-width: 992px) {
+  .navbar-collapse {
+    background: white;
+    border-top: 1px solid #ddd;
+    padding: 1rem 0;
+  }
+}
+
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-wrap: nowrap !important;
+        overflow-x: hidden;
+        margin: 0 auto;
+        gap: 0.5rem;
+        justify-content: center;
+        flex: 1;
+    }
+
+    .navbar-brand img {
+        width: 35px;
+        height: auto;
+    }
+
+    .navbar-brand span {
+        font-size: 0.65rem;
+    }
+
+    .navbar-brand small {
+        font-size: 0.5rem;
+    }
+
+    .navbar-nav {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+
+    .navbar-nav .nav-item {
+        margin-right: 0.25rem !important;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 0.7rem;
+        padding: none;
+    }
+
+    .navbar-nav .nav-item .nav-link {
+        font-size: 0.7rem;
+        padding: none;
+    }
+
+    .input-group {
+        max-width: 120px;
+        flex-shrink: 1;
+    }
+
+    .dynamic-btn {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.75rem;
+    }
+
+    .display {
+        display: none;
+    }
+
+    .c-a {
+        width: 50% !important;
+        float: left;
+        border: none;
+    }
+
+    .card {
+        width: 85%;
+        margin: 0 auto 0.5rem;
+    }
+}

@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Beranda</title>
+
+    <!-- Title -->
+    <title>Profil</title>
+
+    <!-- ikon -->
+    <link rel="shortcut icon" href="https://smkn1maja.sch.id/src\logo\logo-smk.png" />
 
     <!-- Bootstrap css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -25,6 +29,9 @@
     <!-- Style css -->
     <link rel="stylesheet" href="profil.css">
 
+    <!-- responsive css -->
+    <link rel="stylesheet" href="profileresponsive.css">
+
     <!-- swiper css -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 
@@ -32,89 +39,173 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <!-- preload font -->
-    <link rel="preload" href="sahar/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/Pretendard-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
 </head>
-    <body data-aos="fade-in">
+<body data-aos="fade-in">
 
+    <!-- Navbar -->
         <nav class="navbar bg-body mx-auto sticky-top">
             <div class="container d-flex align-items-center justify-content-between mt-1">
 
                 <div class="navbar-brand mb-1">
-                    <img width="35" height="40" style=" filter: brightness(150%) contrast(110%) saturate(100%);" src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1755931878/logo_smkn_1_maja_no_bg_gxofqf.png" alt="Logo SMKN 1 Maja"> 
+                    <img width="45" height="40" style=" filter: brightness(150%) contrast(110%) saturate(100%);"
+                        src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1755931878/logo_smkn_1_maja_no_bg_gxofqf.png"
+                        alt="Logo SMKN 1 Maja">
                      <div class="d-flex flex-column text-center">
-                        <span class="fw-bold" style="font-size: 0.8rem;">SMK NEGERI 1 MAJA</span>
-                        <small class="text-muted" style="font-size: 0.575rem;">Sekolah Pusat Keunggulan</small>
+                        <span class="fw-bold display" style="font-size: 0.8rem;">SMK NEGERI 1 MAJA</span>
+                        <small class="text-muted display" style="font-size: 0.575rem;">Sekolah Pusat Keunggulan</small>
                     </div>
                 </div>
 
                 <div class="flex-grow-1"></div>
 
                     <ul class="navbar-nav mx-auto d-flex flex-row mb-2 mb-lg-0 atur">
+
                         <li class="nav-item box me-5">
                             <a class="nav-link active" href="beranda.php" data-i18n="nav-profile">Beranda</a>
                         </li>
+
                         <li class="nav-item box me-5">
                             <a class="nav-link active" href="profil.php" data-i18n="nav-project">Profil Sekolah</a>
                         </li>
+
                         <li class="nav-item box me-5">
                             <a class="nav-link active" href="ekstra.php" data-i18n="nav-contact">Ekstrakulikuler</a>
                         </li>
+
                         <li class="nav-item box me-5">
                             <a class="nav-link active" href="galeri.php" data-i18n="nav-contact">Galeri</a>
                         </li>
+
                         <li class="nav-item box me-5">
                             <a class="nav-link active" href="kontak.php" data-i18n="nav-contact">Kontak</a>
                         </li>
+
                     </ul>
 
-                    <div class="input-group me-5 justify-content-end" style="max-width: 180px;">
+                    <div class="input-group me-5 justify-content-end display" style="max-width: 180px; opacity: 100%;">
                         <input type="text" id="searchInput" class="form-control" placeholder="Cari">
                         <button class="btn dynamic-btn" type="button" onclick="goToSection()">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
-                <a class="btn dynamic-btn" type="button" href="dashboard.php"><i class="fa fa-user"></i></a>
+
+                        <a class="btn dynamic-btn" type="button" href="admin/dashboard.php"><i class="fa fa-user"></i></a>
+
+                </div>
             </div>
         </nav>
 
-        <section id="profil" class="bs-body mb-5 mt-5">
+        <!-- Profil Sekolah -->
+        <section id="profil" class=" container bs-body mb-5 mt-5">
             <h2 class="text-center fw-bold">Profil Sekolah</h2>
 
             <div class="row py-5 align-items-center">
-                <!-- Bagian teks -->
+
                 <div class="col-md-6 offset-md-1 mb-5">
                     <h1 class="dec">SMK Negeri 1 <span class="dec" style="margin-left: 0rem;">Maja</span></h1>
-                    <div class="border"></div>
-                    <p class="dec" style="font-size: 1.3rem;">
-                        SMK Negeri 1 Maja – Menjadi SMK Pusat Keunggulan yang Menghasilkan 
-                        Sumber Daya Manusia Bermutu dan Berdaya Saing Tinggi Menuju 
+                    <div class="border border1" style="width: 16.5rem;"></div>
+                    <p class="dec2">
+                        SMK Negeri 1 Maja – Menjadi SMK Pusat Keunggulan yang Menghasilkan
+                        Sumber Daya Manusia Bermutu dan Berdaya Saing Tinggi Menuju
                         <b>CENTER OF EXCELLENCE</b>.
                     </p>
-                    <p class="dec" style="font-size: 1.3rem;">
-                        Lulusannya siap bekerja, berwirausaha, dan melanjutkan kuliah ke 
+                    <p class="dec2">
+                        Lulusannya siap bekerja, berwirausaha, dan melanjutkan kuliah ke
                         Perguruan Tinggi Negeri maupun Swasta.
                     </p>
-                    <button href="#" class="btn dynamic-btn btn1">Selengkapnya</button>
                 </div>
 
-                <!-- Bagian gambar kepala sekolah -->
                 <div class="col-md-3 text-center" style="margin-left: 7.5rem; margin-top: -2.15rem;">
-                    <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756702848/kepala_sekolah_wwu4n5.png" alt="Kepala SMKN 1 Maja" class="img-fluid" style="max-width: 250px; margin-left: -1.25rem;">
-                    <h5 class="mt-3 fw-bold dec">Kepala SMKN 1 Maja</h5>
-                    <p class="fw-semibold dec">Bapak Asep Fahroni, S.Pd., M.M.</p>
+                    <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756702848/kepala_sekolah_wwu4n5.png"
+                        alt="Kepala SMKN 1 Maja"
+                        class="img-fluid"
+                        style="max-width: 230px; margin-left: -1.25rem;">
+                    <div class="text">
+                        <h5 class="mt-3 fw-bold dec3">Kepala SMKN 1 Maja</h5>
+                        <p class="fw-semibold dec4">Bapak Asep Fahroni, S.Pd., M.M.</p>
+                    </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="sejarah" class="bs-body mb-5">
+        <!-- Informasi sekolah -->
+        <section id="info-sekolah" class="container py-5" style="margin-top: -3rem;">
+            <h2 class="fw-bold text-center">
+                <i class="bi bi-building me-2" style="color: #002f49;"></i> Informasi Sekolah
+            </h2>
+
+            <div class="card shadow-sm mb-5 mt-4">
+                <div class="card-body px-3 py-4">
+                    <div class="table-responsive">
+                        <table class="table align-middle">
+                        <tbody>
+
+                            <tr>
+                                <td class="text-center" style="width: 60px;">
+                                    <i class="bi bi-mortarboard-fill text-success fs-4"></i>
+                                </td>
+                                <td class="fw-semibold text-dark">Nama Sekolah</td>
+                                <td class="fw-semibold" style="color: #006989;">SMK Negeri 1 Maja</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center">
+                                    <i class="bi bi-geo-alt-fill text-danger fs-4"></i>
+                                </td>
+                                <td class="fw-semibold text-dark">Alamat</td>
+                                <td class="fw-semibold" style="color: #006989;">Jl. Pasukan Sindangkasih No.155, Maja Selatan</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center">
+                                    <i class="bi bi-calendar-check text-warning fs-4"></i>
+                                </td>
+                                <td class="fw-semibold text-dark">Tahun Berdiri</td>
+                                <td class="fw-semibold" style="color: #006989;">1968</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center">
+                                    <i class="bi bi-card-checklist text-primary fs-4"></i>
+                                </td>
+                                <td class="fw-semibold text-dark">NPSN</td>
+                                <td class="fw-semibold" style="color: #006989;">20213857</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center">
+                                    <i class="bi bi-envelope text-info fs-4"></i>
+                                </td>
+                                <td class="fw-semibold text-dark">Email</td>
+                                <td class="fw-semibold" style="color: #006989;">smkn1maja@yahoo.com</td>
+                            </tr>
+
+                            <tr>
+                                <td class="text-center">
+                                    <i class="bi bi-telephone text-dark fs-4"></i>
+                                </td>
+                                <td class="fw-semibold text-dark">No. Telepon</td>
+                                <td class="fw-semibold" style="color: #006989;">(0233) 282480</td>
+                            </tr>
+
+                        </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sejarah -->
+        <section id="sejarah" class=" container bs-body mb-5">
             <h2 class="text-center fw-bold">Sejarah</h2>
 
             <div class="row py-3 align-items-center">
-                <!-- Bagian teks -->
                 <div class="col-md-11 offset-md-1 mb-5 ">
                     <h1 class="dec">Selayang Pandang</h1>
-                    <div class="border"></div>
+                    <div class="border border2" style="width: 20.5rem;"></div>
                     <p class="dec col-md-11" style="font-size: 1.15rem; text-align: justify;">
                         Majalengka “Remaja, Religius, Maju dan Sejahtera” dapat diwujudkan melalui Sumber Daya Manusia SDM yang handal dan Profesional.
                         Salah satu lembaga yang kompeten melahirkan SDM pendukung suksesnya visi tersebut adalah SMK Negeri 1 Maja.
@@ -124,18 +215,18 @@
                         Kini SMK Negeri 1 Maja telah terakreditasi A.
                     </p>
                  </div>
-                
+
             </div>
         </section>
 
-        <section id="visi misi" class="bs-body mb-5">
+        <!-- Visi & Misi -->
+        <section id="visi-misi" class="container bs-body mb-5">
             <h2 class="text-center fw-bold">Visi dan Misi</h2>
 
-            <div class="row py-3 align-items-center">
-                <!-- Bagian teks -->
+            <div class=" container row py-3 align-items-center">
                 <div class="col-md-11 offset-md-1">
                     <h2 class="dec">Visi dan Misi</h2>
-                    <div class="border"></div>
+                    <div class="border border3" style="width: 10.90rem;"></div>
                  </div>
 
                  <div class="text-center v-m">
@@ -146,112 +237,139 @@
 
                     <div class="container text-start">
                         <ol class="list-group-numbered text-left">
+
                             <li class="list-group-item">
                                 Mengembangkan kurikulum sekolah secara berkelanjutan.
                             </li>
+
                             <li class="list-group-item">
                                 Mengembangkan proses pembelajaran dan pengembangan diri secara profesional.
                             </li>
+
                             <li class="list-group-item">
                                 Mengembangkan sistem penilaian pendidikan berbasis kelas dan kompetensi.
                             </li>
+
                             <li class="list-group-item">
                                 Meningkatkan kinerja pendidik dan tenaga kependidikan yang profesional.
                             </li>
+
                             <li class="list-group-item">
                                 Mengembangkan sarana dan prasarana pendidikan.
                             </li>
+
                             <li class="list-group-item">
                                 Mengembangkan kemitraan sekolah dengan berbagai pihak baik ke dalam maupun keluar lembaga.
                             </li>
+
                             <li class="list-group-item">
                                 Menerapkan manajemen berbasis sekolah dan sistem manajemen mutu ISO 9001:2008.
                             </li>
+
                             <li class="list-group-item">
                                 Membangun jiwa peserta didik yang kreatif, inovatif, sportif, dan wirausaha.
                             </li>
+
                             <li class="list-group-item">
                                 Meningkatkan pengawasan dan evaluasi program pendidikan.
                             </li>
+
                             <li class="list-group-item">
                                 Mengembangkan sekolah berbudaya lingkungan.
                             </li>
+
                         </ol>
                     </div>
 
                  </div>
-                
+
             </div>
         </section>
-        
+
+        <!-- Fasilitas -->
         <section class="fasilitas" class="py-5 bs-body">
             <div class="container bs-body">
                 <h2 class="fw-bold text-center mb-5">Fasilitas Sekolah</h2>
                 <div class="grid">
+
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677713/Paper_map-bro_hhsst8.png" alt="Lokasi">
-                        <h3>Lokasi Strategis</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677713/Paper_map-bro_hhsst8.png"
+                            alt="Lokasi">
+                        <h3 class="fw-medium">Lokasi Strategis</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677714/Connected_world-bro_vabxqa.png" alt="Internet">
-                        <h3>Akses Internet</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677714/Connected_world-bro_vabxqa.png"
+                            alt="Internet">
+                        <h3 class="fw-medium">Akses Internet</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677713/Parking-bro_lw5rvn.png" alt="Parkir">
-                        <h3>Area Parkir Luas</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677713/Parking-bro_lw5rvn.png"
+                            alt="Parkir">
+                        <h3 class="fw-medium">Area Parkir Luas</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677713/Sport_family-bro_ckhofj.png" alt="Perpustakaan">
-                        <h3>Fasilitas Olahraga</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677713/Sport_family-bro_ckhofj.png"
+                            alt="Perpustakaan">
+                        <h3 class="fw-medium">Fasilitas Olahraga</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677713/Hotel_Booking-rafiki_tvvq3t.png" alt="Laboratorium">
-                        <h3>Lodging</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Mosque_online_service-bro_diclux.png"
+                            alt="Masjid">
+                        <h3 class="fw-medium">Masjid</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Mosque_online_service-bro_diclux.png" alt="Masjid">
-                        <h3>Masjid</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677713/Hotel_Booking-rafiki_tvvq3t.png"
+                            alt="Laboratorium">
+                        <h3 class="fw-medium">Lodging</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677713/Library-bro_vb7r2u.png" alt="Perpustakaan">
-                        <h3>Perpustakaan</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Data_extraction-rafiki_hpkeoo.png"
+                            alt="Lab Office">
+                        <h3 class="fw-medium">Lab Kom. Office</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Data_extraction-rafiki_hpkeoo.png" alt="Lab Office">
-                        <h3>Lab Komputer Office</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677713/Library-bro_vb7r2u.png"
+                            alt="Perpustakaan">
+                        <h3 class="fw-medium">Perpustakaan</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Marketing-bro_czvsce.png" alt="Lapangan">
-                        <h3>Lapangan Olahraga</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Marketing-bro_czvsce.png"
+                            alt="Lapangan">
+                        <h3 class="fw-medium">Lapangan Olahraga</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Making_art-pana_jliwp3.png" alt="Ekstrakulikuler">
-                        <h3>Ekstrakulikuler</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Making_art-pana_jliwp3.png"
+                            alt="Ekstrakulikuler">
+                        <h3 class="fw-medium">Ekstrakulikuler</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Living_room-bro_ifk89k.png" alt="Ruang Seni">
-                        <h3>Ruang Kesenian</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Data_extraction-cuate_xugjdb.png"
+                            alt="Lab Multimedia">
+                        <h3 class="fw-medium">Lab Kom. Multimedia</h3>
                     </div>
 
                     <div class="card fasilitas-card mb-5">
-                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Data_extraction-cuate_xugjdb.png" alt="Lab Multimedia">
-                        <h3>Lab Komputer Multimedia</h3>
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1757677712/Living_room-bro_ifk89k.png"
+                            alt="Ruang Seni">
+                        <h3 class="fw-medium">Ruang Kesenian</h3>
                     </div>
+
                 </div>
             </div>
         </section>
 
-        <section id="prestasi sekolah" class="py-5 mb-5">
+        <!-- Prestasi sekolah -->
+        <section id="prestasi" class="py-5 mb-5">
             <div class="container mb-5">
                 <h2 class="text-center fw-bold mb-5">Prestasi Sekolah</h2>
 
@@ -262,18 +380,19 @@
                         <div class="carousel-item active">
                             <div class="card border-0 w-75 shadow-lg overflow-hidden" style="display: block; margin: 0 auto;">
                                 <div class="row g-0 h-100">
-                                    <!-- Gambar -->
                                     <div class="col-md-4 d-flex justify-content-center align-items-center bg-light">
                                     <img src="https://smkn1maja.sch.id/src/img/achievement/4cf28db8a3e55b7a6bd0c6b7e40ca936.jpg"
-                                        class="img-fluid h-100 w-100 object-fit-cover" alt="Trophy" style="max-height: 200px;">
+                                        class="img-fluid h-100 w-100 object-fit-cover"
+                                        alt="Trophy"
+                                        style="max-height: 200px;">
                                     </div>
-                                    <!-- Teks -->
                                     <div class="col-md-8 bg-dark text-white p-4">
                                         <h5 class="fw-bold">JUARA HARAPAN 3 LINTAS</h5>
                                         <p class="mb-1">ALAM AMRANX CUP IV</p>
                                         <p class="mb-1"><strong>Tingkat:</strong> Pulau Jawa | <strong>Tim:</strong> Pramuka</p>
                                         <p class="mb-0"><small>Tahun: 2018</small></p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
@@ -284,7 +403,9 @@
                                 <div class="row g-0">
                                     <div class="col-md-4 d-flex justify-content-center align-items-center bg-light">
                                     <img src="https://smkn1maja.sch.id/src/img/achievement/4cf28db8a3e55b7a6bd0c6b7e40ca936.jpg"
-                                        class="img-fluid h-100 w-100 object-fit-cover" alt="Medal" style="max-height:200px;">
+                                        class="img-fluid h-100 w-100 object-fit-cover"
+                                        alt="Medal"
+                                        style="max-height:200px;">
                                     </div>
                                     <div class="col-md-8 bg-dark text-white p-4">
                                         <h5 class="fw-bold">JUARA HARAPAN 2 FUTSAL</h5>
@@ -302,7 +423,9 @@
                                 <div class="row g-0">
                                     <div class="col-md-4 d-flex justify-content-center align-items-center bg-light">
                                     <img src="https://smkn1maja.sch.id/src/img/achievement/4cf28db8a3e55b7a6bd0c6b7e40ca936.jpg"
-                                        class="img-fluid h-100 w-100 object-fit-cover" alt="Medal" style="max-height:200px;">
+                                        class="img-fluid h-100 w-100 object-fit-cover"
+                                        alt="Medal"
+                                        style="max-height:200px;">
                                     </div>
                                     <div class="col-md-8 bg-dark text-white p-4">
                                         <h5 class="fw-bold">JUARA 1 DAN 3 MADYA</h5>
@@ -319,137 +442,189 @@
             </div>
         </section>
 
-        <h2 class="text-center fw-bold">Program Kejuruan</h2>
+        <!-- Kelas Industri -->
+        <section id="kelas-industri" class="mt-5 mb-5">
+            <div class="container mb-5">
+                <h2 class="text-center fw-bold mb-5">Kelas Industri</h2>
 
+                    <div class="mx-auto mb-5 text-center">
+                        <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1759739818/kelas_industri_1_byuzxc.png"
+                            alt="Sertifikasi Kompetensi"
+                            class="img-fluid rounded"
+                            style="width: 725px; height: auto; box-shadow: 0 5px 15px rgba(21, 23, 27, 0.65);
+                                   filter: brightness(105%) contrast(115%) saturate(80%);">
+                    </div>
+
+
+                    <div class="col-md-10 mx-auto text-center">
+                        <h5 class="fw-semibold mb-5" style="text-align: justify; text-align-last: center;">
+                            Kelas industri merupakan salah satu program unggulan yang ada di
+                            SMKN 1 Maja. Program ini sudah ada sejak tahun 2023 di jurusan Rekayasa perangkat Lunak
+                            untuk kelas 11. Saat ini, program kelas industri sudah diterapkan untuk siswa jurusan RPL
+                            sejak kelas 10. Program ini diharapkan mampu menciptakan siswa yang memeiliki prestasi
+                            unggulan di bidang perangkat lunak.
+                        </h5>
+                    </div>
+
+            </div>
+        </section>
+
+        <!-- Jurusan -->
         <section id="jurusan" class=" bs-body py-5 mb-5 mt-3">
+            <h2 class="text-center fw-bold mb-5">Program Kejuruan</h2>
             <div class="container">
                 <div class="row g-4">
+
                     <div class="col-md-3 c-a">
                         <div class="card card1">
-                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756623231/RPL_fixed_zrwm7e.png" class="card-img-top mb-3" alt="">
+                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756623231/RPL_fixed_zrwm7e.png"
+                                class="card-img-top mb-3 c-1"
+                                alt="RPL">
                             <div class="card-body text-center">
                                 <h5 class="card-title fw-bold">Rekayasa Perangkat Lunak</h5>
                             </div>
                          </div>
                      </div>
+
                     <div class="col-md-3 c-a">
                         <div class="card card2">
-                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756636199/TKJ_fixed_l23mcn.png" class="card-img-top mb-3" alt="">
+                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756636199/TKJ_fixed_l23mcn.png"
+                                class="card-img-top mb-3"
+                                alt="TKJ">
                             <div class="card-body text-center">
                                 <h5 class="card-title fw-bold">Teknik Komputer & Jaringan</h5>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-3 c-a">
                         <div class="card card3">
-                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756700221/TE_de3ls9.png" class="card-img-top mb-3" alt="">
+                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756700221/TE_de3ls9.png"
+                                class="card-img-top mb-3"
+                                alt="TAV">
                             <div class="card-body text-center">
                                 <h5 class="card-title fw-bold">Teknik Audio Video Elektronika</h5>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-3 c-a">
                         <div class="card card4">
-                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756636186/ATPH_fixed_j9qneq.png" class="card-img-top mb-3" alt="">
+                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756636186/ATPH_fixed_j9qneq.png"
+                                class="card-img-top mb-3"
+                                alt="ATPH">
                             <div class="card-body text-center">
                                 <h5 class="card-title fw-bold">Agribisnis Tanaman Pangan dan Hortikultura</h5>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-3 c-a">
                         <div class="card card5 mt-4">
-                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756709204/poster_jepang_cuw0ba.png" class="card-img-top mb-3" alt="">
+                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756709204/poster_jepang_cuw0ba.png"
+                                class="card-img-top mb-3"
+                                alt="Bahasa Jepang">
                             <div class="card-body text-center">
                                 <h5 class="card-title fw-bold">Bahasa Jepang</h5>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-3 c-a">
                         <div class="card card6 mt-4">
-                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756709212/poster_pkl_bbqvpa.png" class="card-img-top mb-3" alt="">
+                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756709212/poster_pkl_bbqvpa.png"
+                                class="card-img-top mb-3"
+                                alt="PKL">
                             <div class="card-body text-center">
                                 <h5 class="card-title fw-bold">PKL</h5>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-3 c-a">
                         <div class="card card7 mt-4">
-                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756709205/poster_gambar_dimjht.png" class="card-img-top mb-3" alt="">
+                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756709205/poster_gambar_dimjht.png"
+                                class="card-img-top mb-3"
+                                alt="Teknik Gambar">
                             <div class="card-body text-center">
                                 <h5 class="card-title fw-bold">Teknik Gambar</h5>
                             </div>
                         </div>
                     </div>
+
                     <div class="col-md-3 c-a">
                         <div class="card card8 mt-4">
-                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756709205/poster_kewirausahaan_fdrtlg.png" class="card-img-top mb-3" alt="">
+                            <img src="https://res.cloudinary.com/da4fjxm1e/image/upload/v1756709205/poster_kewirausahaan_fdrtlg.png"
+                                class="card-img-top mb-3"
+                                alt="Kewirausahaan">
                             <div class="card-body text-center">
                                 <h5 class="card-title fw-bold">Kewirausahaan</h5>
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
 
     <!-- footer -->
-      <footer>
-        <div class="container">
-        <div class="row text-white">
-            <!-- Informasi -->
-            <div class="col-md-3 mb-3">
-            <h5>Informasi</h5>
-            <ul class="list-unstyled">
-                <li><a href="#">PPDB</a></li>
-                <li><a href="#">LMS</a></li>
-                <li><a href="#">LSP-P1</a></li>
-                <li><a href="#">E-Arsip Surat</a></li>
-                <li><a href="#">Kalender Pendidikan</a></li>
-            </ul>
-            </div>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!-- Informasi -->
+                    <div class="col-md-3 mb-3">
+                      <h5>Informasi</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">PPDB</a></li>
+                            <li><a href="#">LMS</a></li>
+                            <li><a href="#">LSP-P1</a></li>
+                            <li><a href="#">E-Arsip Surat</a></li>
+                            <li><a href="#">Kalender Pendidikan</a></li>
+                        </ul>
+                    </div>
 
-            <!-- Alumni -->
-            <div class="col-md-3 mb-3">
-            <h5>Alumni</h5>
-            <ul class="list-unstyled">
-                <li><a href="#">Grup Alumni</a></li>
-                <li><a href="#">Lowongan Kerja</a></li>
-                <li><a href="#">Kelulusan</a></li>
-                <li><a href="#">Testimoni</a></li>
-            </ul>
-            </div>
+                    <!-- Alumni -->
+                    <div class="col-md-3 mb-3">
+                      <h5>Alumni</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Grup Alumni</a></li>
+                            <li><a href="#">Lowongan Kerja</a></li>
+                            <li><a href="#">Kelulusan</a></li>
+                            <li><a href="#">Testimoni</a></li>
+                        </ul>
+                    </div>
 
-            <!-- Komunitas -->
-            <div class="col-md-3 mb-3">
-            <h5>Komunitas & Link</h5>
-            <ul class="list-unstyled">
-                <li><a href="#">Kemdikbud</a></li>
-                <li><a href="#">Disdik Jabar</a></li>
-                <li><a href="#">Pemprov Jabar</a></li>
-                <li><a href="#">Pemkab Majalengka</a></li>
-            </ul>
-            </div>
+                    <!-- Komunitas -->
+                    <div class="col-md-3 mb-3">
+                      <h5>Komunitas & Link</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Kemdikbud</a></li>
+                            <li><a href="#">Disdik Jabar</a></li>
+                            <li><a href="#">Pemprov Jabar</a></li>
+                            <li><a href="#">Pemkab Majalengka</a></li>
+                        </ul>
+                    </div>
 
-            <!-- Kontak -->
-            <div class="col-md-3 mb-3">
-            <h5>Kontak</h5>
-            <p>Jl. Pahlawan No.123<br>Kabupaten Majalengka</p>
-            <p>(0233) 123456</p>
-            <p>smkn1maja@gmail.com</p>
-            <div class="social-icons">
-                <a href="#"><i class="bi bi-facebook"></i></a>
-                <a href="#"><i class="bi bi-twitter"></i></a>
-                <a href="#"><i class="bi bi-instagram"></i></a>
-            </div>
-            </div>
-        </div>
+                    <!-- Kontak -->
+                    <div class="col-md-3 mb-3">
+                      <h5>Kontak</h5>
+                        <p>Jl. Pasukan Sindangkasih No. 155, Maja Selatan, kab. Majalengka</p>
+                        <p>(0233) 282480</p>
+                        <p>smkn1maja@yahoo.com</p>
+                        <div class="social-icons">
+                            <a href="#"><i class="bi bi-facebook"></i></a>
+                            <a href="#"><i class="bi bi-twitter"></i></a>
+                            <a href="#"><i class="bi bi-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- Bottom -->
-        <div class="footer-bottom">
-            <p class="mt-4 mb-0">@ 2025 SMK NEGERI 1 MAJA. ALL RIGHTS RESERVED</p>
-        </div>
-        </div>
-    </footer>
+                <!-- Bottom -->
+                <div class="footer-bottom">
+                    <p class="mt-4 mb-0">@ 2025 SMK NEGERI 1 MAJA. ALL RIGHTS RESERVED | By: DZIKRA</p>
+                </div>
+            </div>
+        </footer>
 
     <!-- font awesome JS -->
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
@@ -459,11 +634,16 @@
     <script>
 
         // initial aos
-        AOS.init();
+        AOS.init({
+            offset: 50,
+            duration: 600,
+            easing: 'ease-in-out',
+            once: true
+        });
 
          // untuk nav link
         document.addEventListener("DOMContentLoaded", () => {
-            const currentPage = window.location.pathname.split("/").pop(); 
+            const currentPage = window.location.pathname.split("/").pop();
             const links = document.querySelectorAll(".nav-link");
 
             links.forEach(link => {
@@ -518,9 +698,11 @@
 
             let sections = {
                 "profil": "profil",
+                "info-sekolah": "info-sekolah",
                 "sejarah": "sejarah",
                 "visi misi": "visi misi",
-                "prestasi sekolah": "prestasi sekolah",
+                "fasilitas": "fasilitas",
+                "prestasi": "prestasi",
                 "jurusan": "jurusan"
             };
 
@@ -555,9 +737,9 @@
             line.style.bottom = "8px";
             line.style.height = "2px";
             line.style.width = "0";
-            line.style.background = "#000"; 
+            line.style.background = "#000";
             line.style.pointerEvents = "none";
-            link.style.position = "relative"; 
+            link.style.position = "relative";
             link.appendChild(line);
 
             // animasi GSAP hover
@@ -570,6 +752,6 @@
         });
 
     </script>
-    
-    </body>
+
+</body>
 </html>
