@@ -6,7 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Siswa</title>
+
+    <!-- Title -->
+    <title>Data Guru</title>
 
     <!-- ikon -->
     <link rel="shortcut icon" href="https://smkn1maja.sch.id/src\logo\logo-smk.png" />
@@ -28,7 +30,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Style css -->
-    <link rel="stylesheet" href="datasiswa.css">
+    <link rel="stylesheet" href="dataguru.css">
+
+    <!-- preload font -->
+    <link rel="preload" href="sahar/Sahar-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
 
 </head>
 <body data-aos="fade-in">
@@ -40,63 +45,48 @@
         <div class="flex-grow-1 p-4">
             <div class="container-fluid">
 
-            <!-- Header bar (judul + search + tombol) -->
             <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap">
-                <h2 class="fw-bold mb-2 mb-md-0">Data Siswa</h2>
+                <h2 class="fw-bold mb-2 mb-md-0">Data Guru</h2>
 
-                <!-- Search Box (di tengah) -->
                 <div class="input-group mx-md-4 my-2 my-md-0 justify-content-center" style="max-width: 400px;">
-                    <input type="text" id="searchInput" class="form-control" placeholder="Cari nama siswa...">
+                    <input type="text" id="searchInput" class="form-control" placeholder="Cari nama guru...">
                     <button class="btn dynamic-btn" type="button">
                         <i class="fa fa-search"></i>
                     </button>
                 </div>
 
-                <!-- Tombol Tambah Data -->
-                <a href="tambahsiswa.php" class="btn btn-outline-primary">Tambah Siswa</a>
             </div>
 
             <!-- Tabel data -->
             <div class="table-responsive mt-4" style="max-height: 465px; overflow-y: auto;">
                 <table class="table table-custom table-striped table-bordered">
                     <thead class="table">
-                    <tr class="text-center">
-                        <th>NIS</th>
-                        <th>Nama</th>
-                        <th>Umur</th>
-                        <th>Kelas</th>
-                        <th>Aksi</th>
-                    </tr>
+                        <tr class="text-center">
+                            <th>NIP</th>
+                            <th>Nama</th>
+                            <th>Jabatan</th>
+                            <th>Status</th>
+                        </tr>
                     </thead>
                         <tbody>
                             <?php
-                                $result = mysqli_query($conn, "SELECT * FROM data_siswa");
+                                $result = mysqli_query($conn, "SELECT * FROM data_guru");
                                 while ($row = mysqli_fetch_assoc($result)) {
-                                    $kelas_full = $row['kelas'] . " " . $row['jurusan'] . " " . $row['subkelas'];
-
-                                    echo "<tr>
-                                            <td>{$row['nis']}</td>
-                                            <td>{$row['nama']}</td>
-                                            <td>{$row['umur']}</td>
-                                            <td>{$kelas_full}</td> <!-- tampil gabungan -->
-                                            <td>
-                                                <div class='d-flex gap-1'>
-                                                    <a href='editsiswa.php?id={$row['id']}' class='btn btn-outline-warning btn-sm'>Edit</a>
-                                                    <a href='hapussiswa.php?id={$row['id']}' class='btn btn-outline-danger btn-sm' onclick='return confirm(\"Yakin mau hapus?\")'>Hapus</a>
-                                                </div>
-                                            </td>
-                                        </tr>";
-                                    }
-                                ?>
+                                echo "<tr>
+                                        <td>{$row['nip']}</td>
+                                        <td>{$row['nama']}</td>
+                                        <td>{$row['jabatan']}</td>
+                                        <td>{$row['statuss']}</td>
+                                    </tr>";
+                            }
+                            ?>
                         </tbody>
-                        <tfoot>
-                            <tr></tr>
-                        </tfoot>
                     </table>
                 </div>
             </div>
         </div>
     </div>
+
 
 <script>
 
@@ -108,25 +98,20 @@
         once: true
     });
 
-    const html = document.documentElement;
-
-    // Ambil theme dari localStorage
-    const savedTheme = localStorage.getItem('theme') || 'light';
-
     // fungsi search box
     document.getElementById('searchInput').addEventListener('keyup', function() {
         const input = this.value.toLowerCase();
         const rows = document.querySelectorAll('table tbody tr');
 
         rows.forEach(row => {
-            const nis = row.cells[0].textContent.toLowerCase();
+            const nip = row.cells[0].textContent.toLowerCase();
             const nama = row.cells[1].textContent.toLowerCase();
-            const umur = row.cells[2].textContent.toLowerCase();
+            const jabatan = row.cells[2].textContent.toLowerCase();
 
-            if (nis.includes(input) || nama.includes(input) || umur.includes(input)) {
+            if (nip.includes(input) || nama.includes(input) || jabatan.includes(input)) {
             row.style.display = '';
-            } else {
 
+            } else {
             row.style.display = 'none';
             }
         });

@@ -110,7 +110,7 @@ $jumlahSiswa = $dataSiswa['total'];
                         </button>
                     </div>
 
-                        <a class="btn dynamic-btn" type="button" href="admin/dashboard.php"><i class="fa fa-user"></i></a>
+                        <a class="btn dynamic-btn" type="button" href="client_side/index.php"><i class="fa fa-user"></i></a>
 
                 </div>
             </div>

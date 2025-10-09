@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Style css -->
-    <link rel="stylesheet" href="datasiswa.css">
+    <link rel="stylesheet" href="siswa.css">
 
 </head>
 <body data-aos="fade-in">
@@ -40,11 +40,9 @@
         <div class="flex-grow-1 p-4">
             <div class="container-fluid">
 
-            <!-- Header bar (judul + search + tombol) -->
             <div class="d-flex justify-content-between align-items-center mb-2 flex-wrap">
                 <h2 class="fw-bold mb-2 mb-md-0">Data Siswa</h2>
 
-                <!-- Search Box (di tengah) -->
                 <div class="input-group mx-md-4 my-2 my-md-0 justify-content-center" style="max-width: 400px;">
                     <input type="text" id="searchInput" class="form-control" placeholder="Cari nama siswa...">
                     <button class="btn dynamic-btn" type="button">
@@ -52,8 +50,6 @@
                     </button>
                 </div>
 
-                <!-- Tombol Tambah Data -->
-                <a href="tambahsiswa.php" class="btn btn-outline-primary">Tambah Siswa</a>
             </div>
 
             <!-- Tabel data -->
@@ -65,7 +61,6 @@
                         <th>Nama</th>
                         <th>Umur</th>
                         <th>Kelas</th>
-                        <th>Aksi</th>
                     </tr>
                     </thead>
                         <tbody>
@@ -78,13 +73,7 @@
                                             <td>{$row['nis']}</td>
                                             <td>{$row['nama']}</td>
                                             <td>{$row['umur']}</td>
-                                            <td>{$kelas_full}</td> <!-- tampil gabungan -->
-                                            <td>
-                                                <div class='d-flex gap-1'>
-                                                    <a href='editsiswa.php?id={$row['id']}' class='btn btn-outline-warning btn-sm'>Edit</a>
-                                                    <a href='hapussiswa.php?id={$row['id']}' class='btn btn-outline-danger btn-sm' onclick='return confirm(\"Yakin mau hapus?\")'>Hapus</a>
-                                                </div>
-                                            </td>
+                                            <td>{$kelas_full}</td>
                                         </tr>";
                                     }
                                 ?>
