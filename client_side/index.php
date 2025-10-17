@@ -40,7 +40,7 @@ $namaUser = $_SESSION['nama_user'];
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- css -->
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="index.css">
 
     <!-- aos CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">

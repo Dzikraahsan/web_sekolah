@@ -60,13 +60,13 @@
             <div class="table-responsive mt-4" style="max-height: 465px; overflow-y: auto;">
                 <table class="table table-custom table-striped table-bordered">
                     <thead class="table">
-                    <tr class="text-center">
-                        <th>NIS</th>
-                        <th>Nama</th>
-                        <th>Umur</th>
-                        <th>Kelas</th>
-                        <th>Aksi</th>
-                    </tr>
+                        <tr class="text-center">
+                            <th>NIS</th>
+                            <th>Nama</th>
+                            <th>Umur</th>
+                            <th>Kelas</th>
+                            <th>Aksi</th>
+                        </tr>
                     </thead>
                         <tbody>
                             <?php

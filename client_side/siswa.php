@@ -53,7 +53,7 @@
             </div>
 
             <!-- Tabel data -->
-            <div class="table-responsive mt-4" style="max-height: 465px; overflow-y: auto;">
+            <div class="table-responsive mt-4" style="max-height: 445px; overflow-y: auto;">
                 <table class="table table-custom table-striped table-bordered">
                     <thead class="table">
                     <tr class="text-center">

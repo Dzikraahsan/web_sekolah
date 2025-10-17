@@ -1,3 +1,7 @@
+html::-webkit-scrollbar {
+    display: none !important;
+}
+
 body {
     font-family: 'Pretendard-Regular';
     font-optical-sizing: auto;
@@ -7,6 +11,7 @@ body {
     color: var(--bs-body-color);
     transition: all 0.4s ease;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 :root {

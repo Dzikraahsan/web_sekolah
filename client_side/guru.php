@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <!-- Style css -->
-    <link rel="stylesheet" href="dataguru.css">
+    <link rel="stylesheet" href="guru.css">
 
     <!-- preload font -->
     <link rel="preload" href="sahar/Sahar-Regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
@@ -58,7 +58,7 @@
             </div>
 
             <!-- Tabel data -->
-            <div class="table-responsive mt-4" style="max-height: 465px; overflow-y: auto;">
+            <div class="table-responsive mt-4" style="max-height: 445px; overflow-y: auto;">
                 <table class="table table-custom table-striped table-bordered">
                     <thead class="table">
                         <tr class="text-center">
