@@ -23,9 +23,13 @@
         <div class="d-flex flex-column flex-shrink-0 p-3 text-white bg-dark"
           style="width: 200px; height: 150vh;">
 
-            <a href="dashboard.php" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
-                <span class="fs-5 ms-3 fw-bold">Admin Panel<i class="fa fa-user ms-1"></i></span>
-            </a>
+                <span class="text-center fs-5 ms-4 fw-bold text-white">
+                    Admin Panel
+                    <a href="../client_side/index.php" class="text-decoration-none text-white"
+                        style="opacity: 0%;">
+                        <i class="fa-solid fa-user ms-1"></i>
+                    </a>
+                </span>
             <hr>
 
             <ul class="nav nav-pills flex-column mb-auto">
